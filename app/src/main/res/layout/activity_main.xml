@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#FFFFFF"
+    android:foregroundTint="#1C1B1B"
+    android:foregroundTintMode="add"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="424dp"
+        android:layout_height="185dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="-3dp">
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="14dp"
+            android:contentDescription="TODO"
+            app:srcCompat="@drawable/utilisateur" />
+
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.01" />
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="210dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="0.1"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/FullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:breakStrategy="high_quality"
+                android:drawableTint="#E91E63"
+                android:ems="10"
+                android:foregroundTint="#0C0C0C"
+                android:foregroundTintMode="add"
+                android:hint="@string/fullname"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:singleLine="true"
+                android:textColor="#BFBFBF"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/age"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:textColor="#BFBFBF" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/email"
+                android:inputType="textWebEmailAddress"
+                android:minHeight="48dp"
+                android:textColor="#BFBFBF" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="404dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="1dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:layout_editor_absoluteX="1dp">
+
+        <View
+            android:id="@+id/divider6"
+            android:layout_width="385dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:background="?android:attr/listDivider"
+            android:backgroundTint="#131313"
+            android:backgroundTintMode="add" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="13dp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="27dp"
+            android:background="#FFFFFF"
+            android:backgroundTint="#FFFFFF"
+            android:breakStrategy="high_quality"
+            android:fontFamily="sans-serif"
+            android:text="  Gender"
+            android:textColor="#838383"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="391dp"
+            android:layout_height="52dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="103dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1" />
+
+            <RadioButton
+                android:id="@+id/radioButtonHomme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#000000"
+                android:backgroundTintMode="add"
+                android:checked="true"
+                android:drawableTint="@color/black"
+                android:fontFamily="sans-serif"
+                android:foregroundTintMode="add"
+                android:phoneNumber="false"
+                android:text="Homme"
+                android:textIsSelectable="true"
+                android:textSize="16sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <RadioButton
+                android:id="@+id/radioButtonFemme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#121212"
+                android:backgroundTintMode="add"
+                android:drawableTint="#000000"
+                android:drawableTintMode="add"
+                android:fontFamily="sans-serif"
+                android:text="Femme"
+                android:textSize="16sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Space
+                android:layout_width="73dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="01" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider9"
+            android:layout_width="385dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:background="?android:attr/listDivider"
+            android:backgroundTint="#131313"
+            android:backgroundTintMode="add" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="410dp"
+        android:layout_height="219dp"
+        android:layout_marginTop="1dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        tools:layout_editor_absoluteX="1dp">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="27dp"
+            android:background="#FFFFFF"
+            android:backgroundTint="#FFFFFF"
+            android:breakStrategy="high_quality"
+            android:fontFamily="sans-serif"
+            android:text="   Skills"
+            android:textColor="#838383"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="174dp"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="13dp" />
+
+            <SeekBar
+                android:id="@+id/Android"
+                android:layout_width="401dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="375dp"
+                android:layout_height="27dp"
+                android:background="#FFFFFF"
+                android:backgroundTint="#FFFFFF"
+                android:breakStrategy="high_quality"
+                android:fontFamily="sans-serif"
+                android:gravity="end"
+                android:text="ANDROID"
+                android:textSize="18sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="14dp" />
+
+            <SeekBar
+                android:id="@+id/IOS"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="373dp"
+                android:layout_height="27dp"
+                android:background="#FFFFFF"
+                android:backgroundTint="#FFFFFF"
+                android:breakStrategy="high_quality"
+                android:fontFamily="sans-serif"
+                android:gravity="end"
+                android:text="IOS"
+                android:textSize="18sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="11dp" />
+
+            <SeekBar
+                android:id="@+id/Flutter"
+                android:layout_width="401dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="381dp"
+                android:layout_height="27dp"
+                android:background="#FFFFFF"
+                android:backgroundTint="#FFFFFF"
+                android:breakStrategy="high_quality"
+                android:fontFamily="sans-serif"
+                android:gravity="end"
+                android:text="Flutter"
+                android:textSize="18sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider10"
+            android:layout_width="392dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:background="?android:attr/listDivider"
+            android:backgroundTint="#131313"
+            android:backgroundTintMode="add" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"></LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="403dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="112dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        tools:layout_editor_absoluteX="4dp">
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/buttonReset"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Reset" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/buttonNext"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="NEXT" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
