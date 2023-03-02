@@ -13,6 +13,7 @@ import android.util.Patterns
 import android.view.inputmethod.EditorInfo
 import android.widget.*
 import androidx.annotation.RequiresApi
+import com.google.android.material.internal.ViewUtils.hideKeyboard
 import com.google.android.material.textfield.TextInputLayout
 
 class MainActivity : AppCompatActivity() {
@@ -22,15 +23,11 @@ class MainActivity : AppCompatActivity() {
     private lateinit var ageTextLayout: TextInputLayout
     private lateinit var imageBorder: ImageView
     private lateinit var profileImage: ImageView
-
     private lateinit var radioGroup: RadioGroup
     private lateinit var checkedRadioButton: RadioButton
     private lateinit var nextBtn: Button
-
     private lateinit var layoutTitle: TextView
-
     private val cvObject = CvObject()
-
     private lateinit var sharedPrefs: SharedPreferences
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
